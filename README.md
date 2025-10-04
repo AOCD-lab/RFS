@@ -19,16 +19,22 @@ Main script to be copied to your working directory. Three lines to be modified:<
 
 Change the initial lines to match your project, username, etc.
 
-Change the line below to match the directory where all the SW is stored:
+Change the line below to match the directory where all the SW is stored:<br>
 RFSHOME=/scratch/cavalll/RFS/
 
 Line below: 
+
     python3   $RFSHOME/Python/run-mc-filtered.py  myfile.csv 5 10 $SEED  --maxpw 0.80 > Metal-050_51cats-BC-5d.$SEED &
+
 5 is the number of descriptors to include.
+
 10 is the number of combinations to test.  For real runs should be 1000000
+
 --maxpw 0.80 sets the maximum pairwise correlation allowed between the selected descriptors.
 
+
 Second instance to change, line below, same parameters as above:
+
     python3   $RFSHOME/Python/run-mc-filtered.py  myfile.csv 5 10 9880590681   --maxpw 0.80 > Metal-050_51cats-BC-5d.9880590681
 
 <br> 
