@@ -1,0 +1,9 @@
+test MC code
+0  ! wr rm
+3  ! norm flag
+1  !  orig
+0  ! N skip
+      51  ! N sys
+   5   ! N ele
+0     ! N ste
+   0  ! N vb
